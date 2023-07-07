@@ -1,39 +1,12 @@
 const prompt = require('prompt-sync')();
 
 function game() {
-    let playerScore = 0;
-    let computerScore = 0;
-
-    for (let i = 0; i < 5; i++) {
-        console.log("\n");
-        const playerSelection = prompt("enter rock, paper, or scissors: ");
-        const computerSelection = getComputerChoice();
-
-        const results = playRound(playerSelection, computerSelection);
-        console.log(results);
-
-        if (results === "player wins the round") {
-            playerScore++;
-        } else if (results === "computer wins the round") {
-            computerScore++;
-        }
-    }
-
     console.log("\n");
-    console.log("Game Over!");
-    console.log("Player Score: ", playerScore);
-    console.log("Computer Score: ", computerScore);
+    const playerSelection = prompt("enter rock, paper, or scissors: ");
+    const computerSelection = getComputerChoice();
 
-    if (playerScore > computerScore) {
-        console.log("player wins the match!");
-        console.log("\n");
-    } else if (computerScore > playerScore) {
-        console.log("computer wins the match!");
-        console.log("\n");
-    } else {
-        console.log("it is a tie!");
-        console.log("\n");
-    }
+    const results = playRound(playerSelection, computerSelection);
+    console.log(results);
 }
 
 function getComputerChoice() {
