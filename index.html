@@ -13,9 +13,25 @@
         <div class="container">
             <p>Select Rock, Paper, or Scissors</p>
             <div class="game-selection">
-                <button type="button" class="btn btn-primary btn-lg">Rock</button>
-                <button type="button" class="btn btn-primary btn-lg">Paper</button>
-                <button type="button" class="btn btn-primary btn-lg">Scissors</button>
+                <button type="button" class="btn btn-primary btn-lg" id="rock">Rock</button>
+                <button type="button" class="btn btn-primary btn-lg" id="paper">Paper</button>
+                <button type="button" class="btn btn-primary btn-lg" id="scissors">Scissors</button>
+            </div>
+            <div class="middle">
+                <p id="result"></p>
+                <p id="round"></p>
+            </div>
+        </div>
+
+        <div class="score">
+            <div class="score-left">
+                <div class="score-board">Player Score :</div>
+                <div class="score-display" id="player-score">0</div>
+            </div>
+
+            <div class="score-right">
+                <div class="score-board">Computer Score :</div>
+                <div class="score-display" id="computer-score">0</div>
             </div>
         </div>
         <script src="app.js"></script>
