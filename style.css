@@ -9,6 +9,21 @@ p {
     font-size: xx-large;
 }
 
+.middle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
 .btn {
     margin-left: 25px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    font-size: xx-large;
 }
